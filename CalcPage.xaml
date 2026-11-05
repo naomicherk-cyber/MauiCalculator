@@ -2,20 +2,27 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiCalculator.CalcPage"
-             Title="CalcPage">
-    <VerticalStackLayout>
+             Title="CalcPage"
+             BackgroundColor="Beige">
+    <VerticalStackLayout WidthRequest="700">
         <Label Text="" x:Name="lblResult" FontSize="30"/>
         <Grid ColumnDefinitions="*,*,*,*" RowDefinitions="*,*,*,*" HeightRequest="600" ColumnSpacing="10" RowSpacing="10">
-            <Button Text="1"  Grid.Row="0" Grid.Column="0" Clicked="ButtonDigit_Clicked"/>
-            <Button Text="2"  Grid.Row="0" Grid.Column="1" Clicked="ButtonDigit_Clicked"/>
-            <Button Text="3"  Grid.Row="0" Grid.Column="2" Clicked="ButtonDigit_Clicked"/>
-            <Button Text="4"  Grid.Row="1" Grid.Column="0" Clicked="ButtonDigit_Clicked"/>
-            <Button Text="5"  Grid.Row="1" Grid.Column="1" Clicked="ButtonDigit_Clicked"/>
-            <Button Text="6"  Grid.Row="1" Grid.Column="2" Clicked="ButtonDigit_Clicked"/>
-            <Button Text="7"  Grid.Row="2" Grid.Column="0" Clicked="ButtonDigit_Clicked"/>
-            <Button Text="8"  Grid.Row="2" Grid.Column="1" Clicked="ButtonDigit_Clicked"/>
-            <Button Text="9"  Grid.Row="2" Grid.Column="2" Clicked="ButtonDigit_Clicked"/>
-            <Button Text="0"  Grid.Row="3" Grid.Column="0" Clicked="ButtonDigit_Clicked"/>
+            <Button Text="1"  FontSize="Large"  Grid.Row="0" Grid.Column="0" Clicked="ButtonDigit_Clicked"/>
+            <Button Text="2"  FontSize="Large"  Grid.Row="0" Grid.Column="1" Clicked="ButtonDigit_Clicked"/>
+            <Button Text="3"  FontSize="Large"  Grid.Row="0" Grid.Column="2" Clicked="ButtonDigit_Clicked"/>
+            <Button Text="4"  FontSize="Large"  Grid.Row="1" Grid.Column="0" Clicked="ButtonDigit_Clicked"/>
+            <Button Text="5"  FontSize="Large"  Grid.Row="1" Grid.Column="1" Clicked="ButtonDigit_Clicked"/>
+            <Button Text="6"  FontSize="Large"  Grid.Row="1" Grid.Column="2" Clicked="ButtonDigit_Clicked"/>
+            <Button Text="7"  FontSize="Large"  Grid.Row="2" Grid.Column="0" Clicked="ButtonDigit_Clicked"/>
+            <Button Text="8"  FontSize="Large"  Grid.Row="2" Grid.Column="1" Clicked="ButtonDigit_Clicked"/>
+            <Button Text="9"  FontSize="Large"  Grid.Row="2" Grid.Column="2" Clicked="ButtonDigit_Clicked"/>
+            <Button Text="0"  FontSize="Large"  Grid.Row="3" Grid.Column="0" Clicked="ButtonDigit_Clicked"/>
+            <Button Text="+"  FontSize="Large"  Grid.Row="0" Grid.Column="3" Clicked="ButtonOperator_Clicked" BackgroundColor="Gray"/>
+            <Button Text="-"  FontSize="Large"  Grid.Row="1" Grid.Column="3" Clicked="ButtonOperator_Clicked" BackgroundColor="Gray"/>
+            <Button Text="*"  FontSize="Large"  Grid.Row="2" Grid.Column="3" Clicked="ButtonOperator_Clicked" BackgroundColor="Gray"/>
+            <Button Text="/"  FontSize="Large"  Grid.Row="3" Grid.Column="3" Clicked="ButtonOperator_Clicked" BackgroundColor="Gray"/>
+            <Button Text="AC" FontSize="Large"  Grid.Row="3" Grid.Column="1" Clicked="ButtonClear_Clicked" BackgroundColor="red"/>
+            <Button Text="="  FontSize="Large"  Grid.Row="3" Grid.Column="2" Clicked="ButtonEquals_Clicked" BackgroundColor="green"/>
         </Grid>
     </VerticalStackLayout>
 </ContentPage>
